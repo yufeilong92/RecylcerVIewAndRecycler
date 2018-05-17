@@ -44,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         for (int i = 0; i < mData.size(); i++) {
             listVo vo = mData.get(i);
             SelectVo selectVo = new SelectVo();
-            selectVo.setParenid(vo.getId());
+            selectVo.setParenid(i+"");
             ArrayList<itemSelect> list = new ArrayList<>();
             for (int i1 = 0; i1 < vo.getDatebean().size(); i1++) {
                 itemSelect itemSelect = new itemSelect();
